@@ -1,0 +1,5 @@
+{
+    "require": {
+        "stichoza/nbg-currency": "^2.0"
+    }
+}
