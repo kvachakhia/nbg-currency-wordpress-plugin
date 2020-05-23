@@ -2,7 +2,9 @@
 <?php
 use Stichoza\NbgCurrency\NbgCurrency;
 
-wp_enqueue_style('dima', plugins_url('nbg-currency') . '/style.css');
+define('plugin_url', plugins_url('') . '/' . dirname( plugin_basename( __FILE__ ) ));
+
+wp_enqueue_style('nbg', plugin_url . '/style.css');
 
 $currency = [
     'usd' => NbgCurrency::rate('usd'),

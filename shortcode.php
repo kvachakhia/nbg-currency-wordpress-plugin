@@ -1,7 +1,14 @@
 <?php
+define('plugin_url', plugins_url('') . '/' . dirname( plugin_basename( __FILE__ ) ));
 
-function wpb_demo_shortcode()
+
+function widget_short_code()
 {
+    ob_start();
+
     include 'widget.php';
+
+    return ob_get_clean();   
+
 }
-add_shortcode('nbg-currency', 'wpb_demo_shortcode');
+add_shortcode('nbg-currency', 'widget_short_code');
