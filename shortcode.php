@@ -1,6 +1,5 @@
 <?php
-define('plugin_url', plugins_url('') . '/' . dirname( plugin_basename( __FILE__ ) ));
-
+define('plugin_url', plugins_url('') . '/' . dirname(plugin_basename(__FILE__)));
 
 function widget_short_code()
 {
@@ -8,7 +7,7 @@ function widget_short_code()
 
     include 'widget.php';
 
-    return ob_get_clean();   
+    return ob_get_clean();
 
 }
 add_shortcode('nbg-currency', 'widget_short_code');

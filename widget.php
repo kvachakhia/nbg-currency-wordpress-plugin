@@ -1,7 +1,6 @@
 
 <?php
 
-
 use Stichoza\NbgCurrency\NbgCurrency;
 
 define('plugin_url', plugins_url('') . '/' . dirname(plugin_basename(__FILE__)));
