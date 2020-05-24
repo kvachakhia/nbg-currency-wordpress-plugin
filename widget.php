@@ -1,8 +1,10 @@
 
 <?php
+
+
 use Stichoza\NbgCurrency\NbgCurrency;
 
-define('plugin_url', plugins_url('') . '/' . dirname( plugin_basename( __FILE__ ) ));
+define('plugin_url', plugins_url('') . '/' . dirname(plugin_basename(__FILE__)));
 
 wp_enqueue_style('nbg', plugin_url . '/style.css');
 

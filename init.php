@@ -9,5 +9,5 @@ Author: Dimitri Kvachakhia
 
 define('plugin_path', plugin_dir_path(__FILE__));
 
-include_once 'NbgCurrency.php';
+require  'vendor/autoload.php';
 include_once 'shortcode.php';
